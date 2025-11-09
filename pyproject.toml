@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "Cookie-AutoDelete-SyncHelper"
+version = "0.1.0"
+description = "Script to sync Cookie-AutoDelete container-dependent-expressions, between firefox profiles"
+readme = "README.md"
+license = "MIT"
+# Due to the | dict operation
+requires-python = ">=3.9"
+dependencies = [
+    "questionary",
+]
+
+[project.scripts]
+CAD-sync = "my_script:main"
